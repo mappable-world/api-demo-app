@@ -1,0 +1,32 @@
+@font-face {
+	font-family: abcoracle;
+	src: url('./common/fonts/abcoracle-bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: abcoracle;
+	src: url('./common/fonts/abcoracle-medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: abcoracle;
+	src: url('./common/fonts/abcoracle-regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--font-family: abcoracle, arial, sans-serif;
+	--color-route-origin: #2e4ce5;
+	--color-route-destination: #313133;
+	--poi-union-point: #313133;
+	--color-button-primary: #eefd7d;
+	--color-button-primary-hover: #f8ffa6;
+	--color-button-primary-active: #f8ffa6;
+	--color-button-text: #050d33;
+	--icons-icons-action: #122db2;
+}
