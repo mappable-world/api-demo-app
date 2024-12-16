@@ -1,0 +1,40 @@
+{
+	"defaultLanguage": "en_US",
+	"defaultRegion": "dubai",
+	"supportedLanguages": ["en_US"],
+	"regionByLanguage": {
+		"en_US": "dubai"
+	},
+	"currencyRateByLanguage": {
+		"en_US": 1
+	},
+	"driverSpeedByRegion": {},
+	"defaultDriverSpeed": 40,
+	"apiUrl": "https://js.api.mappable.world/v3/",
+	"staticApiUrl": "https://static.api.mappable.world/v1",
+	"routeApiUrl": "https://router.api.mappable.world/v2/",
+	"distanceMatrixApiUrl": "https://distancematrix.api.mappable.world/v2/",
+	"isochroneApiUrl": "https://isoline.api.mappable.world/v1/{{mode}}",
+	"geocodeApiUrl": "https://geocoder.api.mappable.world/v1/",
+	"geosuggestApiUrl": "https://suggest.api.mappable.world/v1/suggest",
+	"outputPath": "dist_mappable",
+	"s3TargetPath": "api-demo-app-mappable",
+	"regions": {
+		"dubai": {
+			"bbox": [
+				[55.505247, 25.077816],
+				[55.905247, 25.577816]
+			],
+			"zoom": 11
+		}
+	},
+	"externals": {
+		"@mappable-world/mappable-types": [
+			"promise new Promise((resolve) => mappable.ready.then(() => resolve(mappable)))"
+		],
+		"@mappable-world/mappable-types/reactify": [
+			"promise new Promise((resolve) => mappable.import('@mappable-world/mappable-reactify').then(resolve))"
+		]
+	},
+	"host": "mappable.localhost"
+}
